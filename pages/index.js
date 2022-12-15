@@ -6,6 +6,12 @@ function index() {
   const featuredEvents = getFeaturedEvents();
   return (
     <div>
+      <h2
+        className="center"
+        style={{ marginTop: "40px", marginBottom: "-20px" }}
+      >
+        Featured Events
+      </h2>
       <EventList items={featuredEvents} />
     </div>
   );
