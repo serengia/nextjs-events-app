@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Events App with Next JS
+
+This is a simple event app built with Next Js.
+
+Live demo [Click here](https://sere-next-events-app.netlify.app/)
 
 ## Getting Started
 
