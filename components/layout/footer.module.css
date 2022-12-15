@@ -1,0 +1,10 @@
+.footer {
+  color: #cef5f5;
+  min-height: 60px;
+  padding: 1rem 4rem;
+  background-color: #202020;
+}
+
+.footer h3 {
+  color: #94fdfd;
+}
