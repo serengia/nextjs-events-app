@@ -1,9 +1,8 @@
-import Button from "../ui/button";
+import Button from "./../ui/Button";
 import classes from "./results-title.module.css";
 
 function ResultsTitle(props) {
   const { date } = props;
-
   const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
     month: "long",
     year: "numeric",
