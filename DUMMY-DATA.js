@@ -42,6 +42,9 @@ export function getAllEvents() {
 export function getFilteredEvents(dateFilter) {
   const { year, month } = dateFilter;
 
+  console.log("YEAR", year);
+  console.log("MONTH", month);
+
   let filteredEvents = DUMMY_EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
     return (

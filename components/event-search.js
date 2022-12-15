@@ -2,14 +2,18 @@ import React, { useRef } from "react";
 import Button from "./ui/Button";
 import s from "./event-search.module.css";
 
-function EventSearch() {
+function EventSearch(props) {
   const yearInputRef = useRef();
   const monthInputRef = useRef();
   const findEventsHandler = (e) => {
     e.preventDefault();
+    const selectedYear = yearInputRef.current.value;
+    const selectedMonth = monthInputRef.current.value;
+
+    props.onSearch(selectedYear, selectedMonth);
   };
   return (
-    <form className={s["form"]}>
+    <form className={s["form"]} onSubmit={findEventsHandler}>
       <div className={s["controls"]}>
         <div className={s["control"]}>
           <label htmlFor="year"></label>
