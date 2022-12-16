@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import s from "./event-item.module.css";
 import AddressIcon from "./icons/address-icon";
@@ -19,7 +19,8 @@ function EventItem(props) {
 
   return (
     <li className={s["item"]}>
-      <img src={`/${image}`} alt={title} />
+      <Image src={`/${image}`} alt={title} width={300} height={200} />
+
       <div className={s["content"]}>
         <div className={s["summary"]}>
           <h2>{title}</h2>
